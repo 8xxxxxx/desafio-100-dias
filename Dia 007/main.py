@@ -4,6 +4,5 @@ def gerar_tabuada(numero):
         resultado = numero * i
         print(f"{numero} x {i} = {resultado}")
 
-# Exemplo de uso
 numero = int(input("Digite um número: "))
 gerar_tabuada(numero)
