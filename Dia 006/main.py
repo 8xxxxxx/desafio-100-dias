@@ -12,4 +12,4 @@ num = int(input("Digite um número: "))
 if num < 0:
     print(f"O fatorial de {num} não existe")
 else:
-    print("O fatorial de {num} é {fatorial(num)}")
+    print(f"O fatorial de {num} é {fatorial(num)}")
