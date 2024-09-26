@@ -1,0 +1,7 @@
+Class on linking git to github, with practice of some commands:
+
+git remote add origin https://...
+git status
+git remote origin
+code .
+git add .
