@@ -1,0 +1,1 @@
+Class with practical examples of creating branches.

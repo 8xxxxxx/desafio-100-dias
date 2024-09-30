@@ -1,0 +1,1 @@
+Class on "Git Pull", which is a combination of "Git Fetch" and "Git Merge".
