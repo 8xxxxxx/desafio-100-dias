@@ -1,3 +1,5 @@
-Git plo Github.
+Day 31 – 10/5/24
+React – Introduction & Installation
 
-(Done!)
+Install Node JS and research about creating a React project with Vite, take the first steps in developing the project by creating it, via terminal
+
