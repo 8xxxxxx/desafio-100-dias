@@ -1,5 +1,24 @@
-Day 31 – 10/5/24
+Day 31 – 10/4/24
 React – Introduction & Installation
 
 Install Node JS and research about creating a React project with Vite, take the first steps in developing the project by creating it, via terminal
+
+Steps to perform Git Clone:
+
+1) Clone the repository on your machine;
+
+2) In the React + Vite project folder, type: npm install
+
+Day 32 – 10/5/24
+Components in React
+
+Create the components folder within the src folder of your structure and populate it with an example component. Remember to render it on the screen by importing it and using it in the app
+
+Day 33 – 10/6/24
+Props
+
+Day 34 – 10/7/24
+Conditional Rendering and UseState
+
+Use React's useState hook to create a boolean state variable tied directly to a component's rendering. When it is true, the component is rendered. When it is false, the component is not rendered on screen.
 
