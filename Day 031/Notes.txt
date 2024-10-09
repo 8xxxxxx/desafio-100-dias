@@ -22,3 +22,8 @@ Conditional Rendering and UseState
 
 Use React's useState hook to create a boolean state variable tied directly to a component's rendering. When it is true, the component is rendered. When it is false, the component is not rendered on screen.
 
+Day 35 – 10/8/24
+Creating a counter in React
+
+Create a component in React for a counter, use the useState hook to add functionality to this component.
+
