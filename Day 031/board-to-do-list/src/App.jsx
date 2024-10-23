@@ -12,11 +12,17 @@ function App() {
         <h1>Quadro de Tarefas</h1>
           <Input taskList={taskList} setTaskList={setTaskList}/>
         </div>
-        <div>
-          {taskList.map((task, index) => (
-            <Board key={index} task={task}/>
-          ))}
 
+        <div className="flex flex-wrap gap-4 mt-4">
+          {taskList.map((task, index) => (
+            <Board 
+              key={index} 
+              task={task}
+              index={index}
+              taskList={taskList}
+              setTaskList={setTaskList}
+              />
+          ))}
         </div>
 
     </>
