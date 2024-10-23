@@ -1,0 +1,12 @@
+Installing and Starting "Node.JS".
+
+node -v
+npm -v
+
+mkdir
+
+npm init -y
+
+
+
+(Done!)
