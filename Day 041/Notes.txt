@@ -1,3 +1,5 @@
+>> Day 041 (Done!)
+
 Installing and Starting "Node.JS".
 
 node -v
@@ -7,6 +9,9 @@ mkdir
 
 npm init -y
 
+>> Day 042 (Done!)
 
+Start server with Express JS.
 
-(Done!)
+npm install express
+npm install cors
