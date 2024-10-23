@@ -15,3 +15,10 @@ Start server with Express JS.
 
 npm install express
 npm install cors
+node server.js
+
+>> Day 043 (Done!)
+
+Creating Routes in Node.JS
+node server.js
+
