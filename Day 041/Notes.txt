@@ -22,3 +22,9 @@ node server.js
 Creating Routes in Node.JS
 node server.js
 
+>> Day 044 (Done!)
+
+Using SQLite to Create a Table
+
+npm install sqlite3
+
