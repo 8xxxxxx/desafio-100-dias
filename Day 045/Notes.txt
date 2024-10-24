@@ -1,0 +1,11 @@
+>> Day 045 (Done!)
+
+Connecting Frontend and Backend
+
+npm init -y
+npm install express
+npm i cors
+
+https://thecatapi.com/
+
+Postman
