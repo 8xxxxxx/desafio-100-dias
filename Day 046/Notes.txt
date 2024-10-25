@@ -1,1 +1,6 @@
 >> Day 046 (Done!)
+
+npm install express
+npm install hjs --save
+
+node main.js
