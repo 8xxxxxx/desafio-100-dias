@@ -66,6 +66,8 @@ router.post('/login', (req, res, next) => {
         res.json ({
             data: req.body
         })
+
+    res.render('index', data)
 })
 
 module.exports = router;
