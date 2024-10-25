@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Error Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.5/dist/css/bootstrap.min.css" rel=""/>
+</head>
+
+    <body>
+
+        <div class="container">
+            <h1>{{message}}</h1>
+        </div>
+
+
+    </body>
+
+</html>
