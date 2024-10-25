@@ -29,6 +29,10 @@
                 {{/profiles}}
             </ol>
 
+            <form action="/join" method>
+
+            </form>
+
         </div>
         
         
