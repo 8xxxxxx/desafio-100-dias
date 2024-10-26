@@ -29,8 +29,11 @@
                 {{/profiles}}
             </ol>
 
-            <form action="/join" method>
-
+            <form action="/join" method="post">
+                <input type="text" name="name" placeholder="Usename :"><br>
+                <input type="text" name="city" placeholder="City :"><br>
+                <input type="text" name="profession" placeholder="Profession :"><br>
+                <input type="submit" value="Cadastrar Perfil"><br>
             </form>
 
         </div>

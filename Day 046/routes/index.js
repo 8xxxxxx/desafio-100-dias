@@ -70,4 +70,11 @@ router.post('/login', (req, res, next) => {
     res.render('index', data)
 })
 
+router.post('/join', (req, res, next) => {
+    const body = req.body;
+    profiles.push(body);
+
+    res.redirect('/');
+});
+
 module.exports = router;
