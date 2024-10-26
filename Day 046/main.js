@@ -1,14 +1,22 @@
 const express = require('express');
 const routes = require('./routes/index');
-const path = require('path');
 const app = express();
+const path = require('path');
 const bodyParser = require('body-parser')
 
-app.use(bodyParser.urlencoded({ extended: false}))
 app.use('/', routes);
+app.use((req, res, next) => {
+    console.log("A middleware has been released.");
+    req.timestamp = new Date().toString();
+    next(); // Allows route flow to continue
+})
+
+app.use(bodyParser.urlencoded({ extended: false}))
+app.use(express.static(path.join(__dirname, 'public')))
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hjs');
-app.use(express.static(path.join(__dirname, 'public')))
+
 
 
 app.listen(8080);
