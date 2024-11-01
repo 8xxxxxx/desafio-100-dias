@@ -1,57 +1,70 @@
-class Node:
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
+# Day 59: Tic Tac Toe
 
-class BinarySearchTree:
-    def __init__(self):
-        self.root = None
+def display_board(board):
+    # Display the current board state
+    for row in board:
+        print(" | ".join(row))
+        print("-" * 9)
 
-    def insert(self, value):
-        # Function to insert a new value into the tree
-        if self.root is None:
-            self.root = Node(value)
-        else:
-            self._insert_recursive(self.root, value)
 
-    def _insert_recursive(self, current_node, value):
-        # Recursive helper function to insert the value at the correct position
-        if value < current_node.value:
-            if current_node.left is None:
-                current_node.left = Node(value)
-            else:
-                self._insert_recursive(current_node.left, value)
-        elif value > current_node.value:
-            if current_node.right is None:
-                current_node.right = Node(value)
-            else:
-                self._insert_recursive(current_node.right, value)
-        # Duplicates are not inserted
+def check_winner(board, player):
+    # Check rows, columns, and diagonals for a winning line
+    for row in board:
+        if all(cell == player for cell in row):
+            return True
 
-    def search(self, value):
-        # Function to search for a value in the tree
-        return self._search_recursive(self.root, value)
+    for col in range(3):
+        if all(board[row][col] == player for row in range(3)):
+            return True
 
-    def _search_recursive(self, current_node, value):
-        # Recursive helper function to search for the value
-        if current_node is None:
-            return False  # Value not found
-        if value == current_node.value:
-            return True  # Value found
-        elif value < current_node.value:
-            return self._search_recursive(current_node.left, value)
-        else:
-            return self._search_recursive(current_node.right, value)
+    if all(board[i][i] == player for i in range(3)) or all(board[i][2 - i] == player for i in range(3)):
+        return True
 
-# Example usage
-bst = BinarySearchTree()
-bst.insert(10)
-bst.insert(5)
-bst.insert(15)
-bst.insert(2)
-bst.insert(7)
+    return False
 
-# Search for elements
-print(bst.search(7))   # Output: True
-print(bst.search(3))   # Output: False
+
+def is_draw(board):
+    # Check if there are no empty cells left
+    return all(cell != ' ' for row in board for cell in row)
+
+
+def play_game():
+    # Initialize the board and set up the game
+    board = [[' ' for _ in range(3)] for _ in range(3)]
+    players = ['X', 'O']
+    current_player = 0
+
+    while True:
+        display_board(board)
+
+        # Get the current player's move
+        print(f"Player {players[current_player]}'s turn.")
+        row = int(input("Enter row (0, 1, or 2): "))
+        col = int(input("Enter column (0, 1, or 2): "))
+
+        # Validate the move
+        if board[row][col] != ' ':
+            print("That cell is already taken. Try again.")
+            continue
+
+        # Make the move
+        board[row][col] = players[current_player]
+
+        # Check for a win
+        if check_winner(board, players[current_player]):
+            display_board(board)
+            print(f"Player {players[current_player]} wins!")
+            break
+
+        # Check for a draw
+        if is_draw(board):
+            display_board(board)
+            print("It's a draw!")
+            break
+
+        # Switch players
+        current_player = 1 - current_player
+
+
+# Run the game
+play_game()
