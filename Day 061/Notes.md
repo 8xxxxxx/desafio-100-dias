@@ -1,19 +1,26 @@
+##### Day 061 – 11/04/2024
+
 1. **Create a New Django Project**
 
    Open the terminal and navigate to the directory where you want to start the project. Run the following command to create your Django project:
 
    ```bash
-   django-admin startproject myproject
+   pip install django
+   pip install django --user
+   python -m pip install --upgrade pip --user
+   setx PATH "%PATH%;C:\Python312\Scripts"
+   setx PATH "%PATH%;C:\Users\rl10\AppData\Roaming\Python\Python312\Scripts"
+   django-admin startproject myblog
    ```
 
-   This will create a folder named `myproject` containing the basic Django project structure.
+   This will create a folder named `myblog` containing the basic Django project structure.
 
 2. **Enter the Project Directory**
 
    Move into the newly created project directory:
 
    ```bash
-   cd myproject
+   cd myblog
    ```
 
 3. **Create the "Core" App**
@@ -21,14 +28,15 @@
    Inside the project directory, create the app named "Core" with the following command:
 
    ```bash
-   python manage.py startapp core
+   python manage.py runserver
+   python manage.py startapp blog
    ```
 
-   This will create a `core` folder inside your project directory, containing the initial structure for the app.
+   This will create a `blog` folder inside your project directory, containing the initial structure for the app.
 
 4. **Register the "Core" App in the Django Project**
 
-   Open the `settings.py` file in `myproject/myproject/settings.py` and add `'core'` to the `INSTALLED_APPS` list:
+   Open the `settings.py` file in `myproject/myproject/settings.py` and add `'blog'` to the `INSTALLED_APPS` list:
 
    ```python
    INSTALLED_APPS = [
@@ -40,7 +48,7 @@
        'django.contrib.messages',
        'django.contrib.staticfiles',
        # Core app
-       'core',
+       'blog',
    ]
    ```
 
@@ -56,3 +64,18 @@
 
    Open your browser and go to `http://127.0.0.1:8000`. This confirms that your project is working.
 
+
+**Other commands**
+
+python manage.py makemigrations
+python manage.py migrate
+
+---
+
+##### Day 062 – 11/05/2024
+
+Creating an Application in Django
+
+Create a Django Application, within the Django project, run the command python manage.py startapp application_name to create a new Django application.
+
+---
