@@ -79,3 +79,33 @@ Creating an Application in Django
 Create a Django Application, within the Django project, run the command python manage.py startapp application_name to create a new Django application.
 
 ---
+
+##### Day 063 – 11/06/2024
+
+Models in Django
+
+Within your Django application, define models using the Django ORM to represent entities in your system.
+
+Day 64 – 11/07/24
+Migrations in Django
+
+Run python manage.py makemigrations and python manage.py migrate to create and apply migrations to the database.
+
+---
+
+##### Day 65 – 11/08/24
+
+Django Administration
+
+Register models in your Django application’s admin.py file to manage data through the Django admin interface.
+
+Access Django Admin and add some products to the database using the admin interface.
+
+admin
+123456
+
+Comands:
+python manage.py createsuperuser
+
+---
+
