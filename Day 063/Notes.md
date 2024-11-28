@@ -1,7 +1,10 @@
-##### Day 063 – 11/06/2024
+##### Dia 73 – 16/11/24
 
-Models in Django
+Apelidos & Distinct
 
-Within the Django application, define models using the Django ORM to represent entities in your system.
+Utilize os conceitos de Apelidos e Distinct, para fazer consultas
+
+Acesse o Django Admin e adicione alguns produtos ao banco de dados utilizando a interface de administração.
 
 ---
+

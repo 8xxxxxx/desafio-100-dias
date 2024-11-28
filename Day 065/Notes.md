@@ -1,7 +1,8 @@
-##### Day 065 – 11/08/2024
+##### Day 75 – 11/18/24
 
-Administration in Django
+Between Operator
 
-Register models in the admin.py file of your Django application to manage data through the Django administrative interface. Go to Django Admin and add some products to the database using the administration interface.
+Apply the BETWEEN operator in SQL queries in MySQL to filter results within a specific range of values ​​in the given database.
 
 ---
+

@@ -7,12 +7,16 @@
     </head>
     <body>
         <h1>Posts</h1>
-    {% for post in posts %}
+        <a href="{% url 'new post' %}">Create New Post</a>
+        {% for post in posts %}
         <div>
             <h2>{{ post.title }}</h2>
             <p>{{ post.content }}</p>
             <small>{{ post.created_at }}</small>
         </div>
+        <a href="{% url 'edit_post' post.id %}">Edit Post</a>
+        <a href="{% url 'post_detail' post.id %}">View More</a>
+        <a href="{% url 'delete_post' post.id %}">Delete</a>
     {% endfor %}
     </body>
 </html>

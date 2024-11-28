@@ -129,3 +129,43 @@ Create HTML templates to render pages using Django's template engine.
 Develop a template for the page that lists products. Use Django template language tags to display product information.
 
 Create a view that lists all registered products. This view should render a template showing the details of each product.
+
+---
+
+##### Day 68 – 11/11/24
+
+URLs in Django
+
+Define URL patterns in the urls.py file to associate URLs with functions or view classes.
+
+Create URLs for the product list and for a detailed page for each product.
+Configure the urls.py file of the “core” application.
+
+---
+
+##### Day 69 – 11/12/24
+
+Forms in Django
+
+Use Django Forms to create forms that can be rendered in templates and processed in views.
+Create a form to add new products to the inventory. The corresponding view should process this form and add the data to the database.
+
+---
+
+##### Day 70 – 11/13/24
+
+Authentication in Django
+
+Add user authentication to your Django project using Django’s built-in features, such as django.contrib.auth.
+
+Set up authentication to allow authenticated users to add products.
+Create a login page and test authentication in your Django system.
+
+When exploring new features, consult the official Django documentation and consider adding features such as:
+
+Pagination for long listings.
+Implementing a REST API using the Django Rest Framework.
+Using middleware to handle requests.
+
+---
+

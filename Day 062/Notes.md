@@ -1,7 +1,15 @@
-##### Day 062 – 11/05/2024
+##### Day 71 – 11/14/24 – SQL
 
-Creating an Application in Django
+SELECT and Basic Queries
 
-Create a Django Application, within the Django project, run the command python manage.py startapp application_name to create a new Django application.
+Within the MySQL Workbench application, perform queries using the SQL SELECT statement to retrieve data from the company database.
+
+---
+
+##### Day 72 – 11/15/24
+
+Arithmetic Operators
+
+Use basic arithmetic operators present in MySQL in select queries on the database passed to you.
 
 ---
