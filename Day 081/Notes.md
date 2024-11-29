@@ -16,12 +16,24 @@ Organizing Flask templates
 
 Structure and organize templates in Flask to improve reusability and modularity.
 
+##### Day 84 – 11/27/24
+
+Displaying Backend Variables on the Frontend with Flask
+
+Integrate backend variables into the frontend and display data dynamically in templates.
+
+##### Day 85 – 11/28/24
+
+Organizing data on the route/main page
+
+Structure and display organized information on the application's main route.
+
 ---
 
 1. folder
 2. pip install flask
 3. in the APP folder: python main.py
-4. 
+4. https://getbootstrap.com/docs/5.3/getting-started/introduction/ (Include Bootstrap’s CSS and JS)
 
 ---
 
