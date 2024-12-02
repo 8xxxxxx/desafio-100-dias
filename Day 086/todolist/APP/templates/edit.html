@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+</head>
+<body>
+    <h1>Edit Task</h1>
+    <form action="/edit/{{ index }}" method="post">
+        <input type="text" name="task" value="{{ task.task }}" required>
+        <button type="submit">Save Changes</button>
+    </form>
+    <a href="/">Cancel</a>
+</body>
+</html>

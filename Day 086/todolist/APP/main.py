@@ -3,6 +3,9 @@ from flask import Flask, render_template, request, redirect, url_for
 # Initialize the Flask application
 app = Flask(__name__, template_folder="templates")
 
+# List to store tasks
+tasks = []
+
 # Define the home route
 @app.route('/')
 def index():
@@ -10,8 +13,8 @@ def index():
 
 @app.route('/add', methods=['POST'])
 def add():
-    tasks.append(request.form['task'])
-    tasks.append({"task":task, "done":False})
+    task = request.form['task']
+    tasks.append({"task": task, "done": False})
     return redirect(url_for('index'))
 
 @app.rout("/edit/<int:index>", methods=["GET", "POST"])

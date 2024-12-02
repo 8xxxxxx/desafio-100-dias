@@ -16,6 +16,13 @@ Flask To-Do List Project – Part 3
 
 Implement logic to change the frontend and backend with interactive routes.
 
+##### Day 89 – 12/02/24
+
+Flask Task List Project – Part 4
+
+Finalize the route interaction and create the editing template to modify tasks.
+
+
 
 ---
 
