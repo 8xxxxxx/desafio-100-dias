@@ -8,7 +8,19 @@
 <body>
     <h1>List Tasks</h1>
 
-    <form>
+    <ul>
+        {% for task in tasks %}
+        <li>
+            <input type="checkbox" name="done" {% if task['done'] %} checked {% endif %} disabled onchange="this.form.submit">
+            <span {% if task['done'] %} style="text-decoration: line-through;" {% endif %}>{{ task['task'] }}</span>
+            <a href="{{ url_for('delete', index=loop.index0) }}">Delete</a>
+            <a href="{{ url_for('edit', index=loop.index0) }}">Edit</a>
+            <a href="{{ url_for('done', index=loop.index0) }}">Done</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <form action="{{ url_for('add') }}" method="post">
         <input type="text" name="task" placeholder="New Task">
         <button type="submit">Add Task</button>
     </form>
