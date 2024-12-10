@@ -22,6 +22,12 @@ Flask Task List Project – Part 4
 
 Finalize the route interaction and create the editing template to modify tasks.
 
+##### Day 90 – 12/03/24
+
+Flask To-Do List Project - Wrap-up
+
+Make CSS changes to finalize and style the to-do list project.
+
 
 
 ---
