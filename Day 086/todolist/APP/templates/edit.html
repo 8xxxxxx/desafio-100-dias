@@ -7,8 +7,8 @@
 </head>
 <body>
     <h1>Edit Task</h1>
-    <form action="/edit/{{ index }}" method="post">
-        <input type="text" name="task" value="{{ task.task }}" required>
+    <form action="{{ url_for('edit', index=index) }}" method="post">
+        <input type="text" name="task" value="{{ task['task'] }}" required>
         <button type="submit">Save Changes</button>
     </form>
     <a href="/">Cancel</a>
