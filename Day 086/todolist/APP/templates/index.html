@@ -92,7 +92,8 @@
     <ul>
         {% for task in tasks %}
         <li>
-            <input type="checkbox" name="done" {% if task['done'] %} checked {% endif %} disabled onchange="this.form.submit">
+            <input type="checkbox" name="done" {% if ta
+                sk['done'] %} checked {% endif %} disabled onchange="this.form.submit">
             <span {% if task['done'] %} style="text-decoration: line-through;" {% endif %}>{{ task['task'] }}</span>
             <a href="{{ url_for('delete', index=loop.index0) }}">Delete</a>
             <a href="{{ url_for('edit', index=loop.index0) }}">Edit</a>
