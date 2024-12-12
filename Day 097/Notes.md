@@ -1,10 +1,7 @@
-##### Day 96 – 12/09/24
+##### Day 97 – 10/12/24
 
-Intermediate Python - YouTube Video Downloader
+Flask - Rest API
 
-Create a YouTube video downloader using Python and appropriate libraries such as Pytube.
-
-
-1- pip install Flask
+Using the concepts learned, create a complete REST API in Python, using Flask as the framework to create this service.
 
 ---
